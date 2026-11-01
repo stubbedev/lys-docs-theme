@@ -1,0 +1,14 @@
+{
+  "name": "lys-docs-theme",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./theme": "./theme/index.js",
+    "./config": "./config.js"
+  },
+  "files": ["theme", "config.js"],
+  "peerDependencies": {
+    "vitepress": "^1.6.3"
+  }
+}
