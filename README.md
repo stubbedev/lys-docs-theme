@@ -5,7 +5,7 @@ site shares, so the family looks the same and a change lands in one place.
 
 ## Use it
 
-`docs/package.json`, pinned to a commit of this repository:
+`docs/package.json`, on a version range of this repository, which Dependabot moves:
 
 ```json
 {
@@ -17,7 +17,7 @@ site shares, so the family looks the same and a change lands in one place.
     "preview": "vitepress preview"
   },
   "devDependencies": {
-    "lys-docs-theme": "github:stubbedev/lys-docs-theme#<commit>",
+    "lys-docs-theme": "github:stubbedev/lys-docs-theme#semver:^0.1.0",
     "vitepress": "^1.6.3"
   },
   "overrides": {
@@ -65,7 +65,7 @@ concurrency:
   cancel-in-progress: true
 jobs:
   pages:
-    uses: stubbedev/lys-docs-theme/.github/workflows/pages.yml@<commit>
+    uses: stubbedev/lys-docs-theme/.github/workflows/pages.yml@<commit of the tag> # v0.1.0
 ```
 
 Pass `with: { nix-prebuild: <command> }` to run a command in the repository's
