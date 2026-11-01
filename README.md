@@ -72,3 +72,9 @@ Pass `with: { nix-prebuild: <command> }` to run a command in the repository's
 `nix develop` shell before the build, such as generating screenshots.
 
 A new family member goes in the `family` list in `config.js`.
+
+## Release
+
+Set `version` in `package.json` to the new version in the commit that gets the tag.
+Dependabot reads a consumer's installed version from that field, not from the tag, so a
+tag that disagrees with it reads as an update on every run.
