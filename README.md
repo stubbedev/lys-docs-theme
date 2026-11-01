@@ -19,6 +19,9 @@ site shares, so the family looks the same and a change lands in one place.
   "devDependencies": {
     "lys-docs-theme": "github:stubbedev/lys-docs-theme#<commit>",
     "vitepress": "^1.6.3"
+  },
+  "overrides": {
+    "vite": "^6.4.3"
   }
 }
 ```
