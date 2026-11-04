@@ -11,6 +11,7 @@ export const family = [
   { name: 'lys-splash', blurb: 'Boot splash' },
   { name: 'lys-polkit', blurb: 'Polkit agent' },
   { name: 'lys-secrets', blurb: 'Secret Service' },
+  { name: 'lys-settings', blurb: 'Settings app' },
 ]
 
 const familyNav = (name) => ({
